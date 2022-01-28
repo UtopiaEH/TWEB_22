@@ -2,10 +2,11 @@ import React, { ReactElement } from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import './index.css'
+import { IRootStore } from './interfaces/interfaces'
 import storeProvider from './mst/stores/StoreProvider'
 import reportWebVitals from './reportWebVitals'
 
-const StoreContext = React.createContext<any>(null)
+const StoreContext = React.createContext<IRootStore | null>(null)
 
 export const useStore = () => React.useContext(StoreContext)
 
