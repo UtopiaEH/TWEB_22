@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d361b06e-687a-4bc6-b7eb-a25280374a9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/interfaces.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mst/models/Todo.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/models/Todo.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mst/stores/RootStore.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/stores/RootStore.store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +27,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/avans-soma/srv-directory" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="ics" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -46,6 +48,10 @@
       <option name="presentableId" value="Default" />
       <updated>1643375977797</updated>
       <workItem from="1643375983094" duration="3869000" />
+      <workItem from="1643463709020" duration="5376000" />
+      <workItem from="1643526142004" duration="1517000" />
+      <workItem from="1643613902628" duration="274000" />
+      <workItem from="1643644576193" duration="50000" />
     </task>
     <servers />
   </component>
