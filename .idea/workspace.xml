@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b3e6c62-c8bd-48b4-920c-e0973a27c7eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Layouts/HeaderLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +76,7 @@
       <updated>1643717981752</updated>
       <workItem from="1643717981754" duration="110000" />
       <workItem from="1643718109991" duration="2475000" />
+      <workItem from="1644347338628" duration="317000" />
     </task>
     <servers />
   </component>
@@ -90,7 +88,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
