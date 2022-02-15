@@ -28,6 +28,12 @@ const informations = [
 ]
 
 export const ContentLayout = () => {
+
+    // const showConsoleInformatios = (e: any) => {
+    //     console.log('>>informations', informations)
+    //     console.log('>>Event', e)
+    // }
+
     return (
         <Content style={ { padding: '0 50px' } }>
             <Breadcrumb style={ { margin: '16px 0' } }>
@@ -38,7 +44,9 @@ export const ContentLayout = () => {
             <div className='site-layout-content'>
                 { informations.map((el, index) => {
                     return (
-                        <CardCustom key={ el.id } title={ el.title } description={ el.description } />
+                        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                        // @ts-ignore
+                        <CardCustom key={ el.id } title={ el.title } description={ el.description } /*callBack={showConsoleInformatios} *//>
                     )
                 })
                 }
