@@ -17,7 +17,7 @@ export const CardCustom = ({
     const refS = useRef(null)
 
     useEffect(() => {
-        console.log('>>refS', refS)
+        // console.log('>>refS', refS)
 
         // return () => {
         //     console.log('>>Unmount')
