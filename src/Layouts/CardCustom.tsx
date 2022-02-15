@@ -1,13 +1,42 @@
+import { Button, Input } from 'antd'
 import Card from 'antd/lib/card'
+import { useEffect, useRef, useState } from 'react'
+import {
+    useCallback
+} from '../../../../../../snap/intellij-idea-ultimate/341/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react'
 
-export const CardCustom = ({ title, description }: { title: string, description: string }) => {
 
-    
+export const CardCustom = ({
+                               title,
+                               description
+                               // callBack
+                           }: { title: string, description: string,/* callBack: (str: any) => void */ }) => {
 
+    const [ inputValue, setInputValue ] = useState('')
+
+    const refS = useRef(null)
+
+    useEffect(() => {
+        // console.log('>>refS', refS)
+
+        // return () => {
+        //     console.log('>>Unmount')
+        // }
+
+    }, [ refS ])
+
+
+    const showValueInAlert = () => {
+        alert(inputValue)
+    }
 
     return (
-        <Card title={ title } bordered={ false }>
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        <Card ref={ refS } /*onClick={ (e) => callBack(e) } */ title={ title } bordered={ false }>
             { description }
+            <Input onChange={ (e) => setInputValue(e.target.value) } value={ inputValue } placeholder={ title } />
+            <Button onClick={ showValueInAlert }>Send</Button>
         </Card>
     )
 

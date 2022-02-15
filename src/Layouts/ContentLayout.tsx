@@ -1,5 +1,6 @@
 import { Breadcrumb, Layout, Menu } from 'antd'
 import { Content } from 'antd/lib/layout/layout'
+import { CustomForm } from '../components/CustomForm/CustomForm'
 import { CardCustom } from './CardCustom'
 
 const { Header } = Layout
@@ -28,21 +29,37 @@ const informations = [
 ]
 
 export const ContentLayout = () => {
+
+    // const showConsoleInformatios = (e: any) => {
+    //     console.log('>>informations', informations)
+    //     console.log('>>Event', e)
+    // }
+
     return (
-        <Content style={ { padding: '0 50px' } }>
-            <Breadcrumb style={ { margin: '16px 0' } }>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>List</Breadcrumb.Item>
-                <Breadcrumb.Item>App</Breadcrumb.Item>
-            </Breadcrumb>
-            <div className='site-layout-content'>
-                { informations.map((el, index) => {
-                    return (
-                        <CardCustom key={ el.id } title={ el.title } description={ el.description } />
-                    )
-                })
-                }
-            </div>
-        </Content>
+        <>
+            <Content style={ { padding: '0 50px' } }>
+                <Breadcrumb style={ { margin: '16px 0' } }>
+                    <Breadcrumb.Item>Home</Breadcrumb.Item>
+                    <Breadcrumb.Item>List</Breadcrumb.Item>
+                    <Breadcrumb.Item>App</Breadcrumb.Item>
+                </Breadcrumb>
+                <div className='site-layout-content'>
+                    <CustomForm />
+
+                    <div>  ---- </div>
+
+                    { informations.map((el, index) => {
+                        return (
+                            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                            // @ts-ignore
+                            <CardCustom key={ el.id } title={ el.title }
+                                        description={ el.description } /*callBack={showConsoleInformatios} */ />
+                        )
+                    })
+                    }
+                </div>
+            </Content>
+        </>
+
     )
 }
