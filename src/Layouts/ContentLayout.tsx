@@ -1,39 +1,16 @@
-import { Breadcrumb, Layout, Menu } from 'antd'
+import { Breadcrumb, Layout, Row } from 'antd'
 import { Content } from 'antd/lib/layout/layout'
-import { CustomForm } from '../components/CustomForm/CustomForm'
+import { useRootStore } from '../index'
+import { IContentModel } from '../interfaces/interfaces'
 import { CardCustom } from './CardCustom'
 
-const { Header } = Layout
-
-const informations = [
-    {
-        id: 1,
-        title: 'Title',
-        description: 'Some more text'
-    },
-    {
-        id: 2,
-        title: 'Title 2',
-        description: 'Some more text'
-    },
-    {
-        id: 3,
-        title: 'Title 3',
-        description: 'Some more text'
-    },
-    {
-        id: 4,
-        title: 'Title 4',
-        description: 'Some more text'
-    }
-]
+const { Footer } = Layout
 
 export const ContentLayout = () => {
 
-    // const showConsoleInformatios = (e: any) => {
-    //     console.log('>>informations', informations)
-    //     console.log('>>Event', e)
-    // }
+    const { contents } = useRootStore()
+
+    console.log('>>root_store', contents)
 
     return (
         <>
@@ -44,21 +21,20 @@ export const ContentLayout = () => {
                     <Breadcrumb.Item>App</Breadcrumb.Item>
                 </Breadcrumb>
                 <div className='site-layout-content'>
-                    <CustomForm />
+                    <Row gutter={ 16 }>
 
-                    <div>  ---- </div>
+                        { contents.map((content: IContentModel) => {
+                            return (
+                                <CardCustom key={ content.id } content={ content } />
+                            )
+                        }) }
 
-                    { informations.map((el, index) => {
-                        return (
-                            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                            // @ts-ignore
-                            <CardCustom key={ el.id } title={ el.title }
-                                        description={ el.description } /*callBack={showConsoleInformatios} */ />
-                        )
-                    })
-                    }
+                    </Row>
+
+
                 </div>
             </Content>
+            <Footer style={ { textAlign: 'center' } }>Ant Design ©2018 Created by Ant UED</Footer>
         </>
 
     )
