@@ -10,8 +10,6 @@ export const ContentLayout = () => {
 
     const { contents } = useRootStore()
 
-    console.log('>>root_store', contents)
-
     return (
         <>
             <Content style={ { padding: '0 50px' } }>
@@ -22,7 +20,6 @@ export const ContentLayout = () => {
                 </Breadcrumb>
                 <div className='site-layout-content'>
                     <Row gutter={ 16 }>
-
                         { contents.map((content: IContentModel) => {
                             return (
                                 <CardCustom key={ content.id } content={ content } />
@@ -30,7 +27,6 @@ export const ContentLayout = () => {
                         }) }
 
                     </Row>
-
 
                 </div>
             </Content>
