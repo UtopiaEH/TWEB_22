@@ -6,12 +6,25 @@ export const ContentModel = types.model('ContentModel', {
     description: '',
     seen: false,
     notes: ''
-}).actions((self) => ({
+})
+    .views((self) => ({
+        get isSeen() {
+            return self.seen
+        },
 
-    changeNotes(value: string) {
-        self.notes = value
-    }
+        findInTitle(param: any) {
+            self.title.includes(param)
+        }
+    }))
+    .actions((self) => ({
+        changeNotes(value: string) {
+            self.notes = value
+        },
 
-}))
+        changeSeen(state: boolean) {
+            console.log('>>state', state)
+            self.seen = state
+        }
+    }))
 
 
