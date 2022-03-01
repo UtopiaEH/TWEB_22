@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc569dc-ffbc-49e0-9dec-bdb7be42fa2d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/ex.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/interfaces.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645528804708</updated>
       <workItem from="1645528806079" duration="5840000" />
-      <workItem from="1646133810467" duration="407000" />
+      <workItem from="1646133810467" duration="1802000" />
     </task>
     <servers />
   </component>

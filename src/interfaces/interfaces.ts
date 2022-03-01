@@ -8,3 +8,5 @@ export interface IRootStore extends Instance<typeof RootStore> {
 
 export interface IContentModel extends Instance<typeof ContentModel> {
 }
+
+

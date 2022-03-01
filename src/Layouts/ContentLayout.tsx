@@ -21,6 +21,7 @@ export const ContentLayout = () => {
                 <div className='site-layout-content'>
                     <Row gutter={ 16 }>
                         { contents.map((content: IContentModel) => {
+
                             return (
                                 <CardCustom key={ content.id } content={ content } />
                             )
