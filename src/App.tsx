@@ -1,12 +1,22 @@
-import React from 'react'
-import logo from './logo.svg'
+import React, { useEffect } from 'react'
 import './App.css'
 
 import { Layout } from 'antd'
+import { useRootStore } from './index'
 import { HeaderLayout } from './Layouts/HeaderLayout'
 import { ContentLayout } from './Layouts/ContentLayout'
 
 function App() {
+
+
+    const rootStore = useRootStore()
+
+    useEffect(() => {
+        rootStore.setDataToLocalStorage()
+        rootStore.getDataFromLocalStorage()
+        // rootStore.removeLocalStorage()
+    }, [])
+
     return (
         <>
             <Layout className='layout'>

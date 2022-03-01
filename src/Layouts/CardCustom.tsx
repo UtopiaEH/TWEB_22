@@ -12,7 +12,8 @@ export const CardCustom = observer(({ content }: { content: IContentModel }) => 
 
     useEffect(() => {
         if (isSeen) {
-            alert(`Is seen ${ title }`)
+            // alert(`Is seen ${ title }`)
+            console.log('>>title', title)
         }
     }, [ isSeen ])
 
