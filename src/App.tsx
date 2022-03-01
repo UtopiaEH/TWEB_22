@@ -8,13 +8,10 @@ import { ContentLayout } from './Layouts/ContentLayout'
 
 function App() {
 
-
     const rootStore = useRootStore()
 
     useEffect(() => {
-        rootStore.setDataToLocalStorage()
-        rootStore.getDataFromLocalStorage()
-        // rootStore.removeLocalStorage()
+        rootStore.setInitialStorageContents()
     }, [])
 
     return (

@@ -1,14 +1,21 @@
-import { Breadcrumb, Layout, Row } from 'antd'
+import { Breadcrumb, Layout, List, Row } from 'antd'
 import { Content } from 'antd/lib/layout/layout'
+import { observer } from 'mobx-react-lite'
+import { useEffect } from 'react'
+import { Note } from '../components/Notes/Note'
 import { useRootStore } from '../index'
 import { IContentModel } from '../interfaces/interfaces'
 import { CardCustom } from './CardCustom'
 
 const { Footer } = Layout
 
-export const ContentLayout = () => {
+export const ContentLayout = observer(() => {
 
-    const { contents } = useRootStore()
+    const { contents, contents_notes } = useRootStore()
+
+    useEffect(() => {
+        console.log('>>contents_notes', contents_notes)
+    }, [ contents_notes ])
 
     return (
         <>
@@ -26,13 +33,34 @@ export const ContentLayout = () => {
                                 <CardCustom key={ content.id } content={ content } />
                             )
                         }) }
-
                     </Row>
 
+                </div>
+
+                <div>
+                    { contents_notes.map((content: IContentModel) => {
+                        return (
+                            <List.Item>
+                                <Note key={ content.id } content={ content } />
+                            </List.Item>
+                        )
+                    })
+                    }
+
+
+                    {/*<List*/ }
+                    {/*    itemLayout='horizontal'*/ }
+                    {/*    dataSource={ contents_notes }*/ }
+                    {/*    renderItem={ (content: any) => (*/ }
+                    {/*        <List.Item>*/ }
+                    {/*            <Note key={content.id} content={ content } />*/ }
+                    {/*        </List.Item>*/ }
+                    {/*    ) }*/ }
+                    {/*/>*/ }
                 </div>
             </Content>
             <Footer style={ { textAlign: 'center' } }>Ant Design ©2018 Created by Ant UED</Footer>
         </>
 
     )
-}
+})

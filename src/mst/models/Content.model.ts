@@ -1,4 +1,5 @@
-import { types } from 'mobx-state-tree'
+import { getParent, getParentOfType, types } from 'mobx-state-tree'
+import RootStore from '../stores/RootStore.store'
 
 export const ContentModel = types.model('ContentModel', {
     id: types.identifier,
@@ -24,7 +25,17 @@ export const ContentModel = types.model('ContentModel', {
         changeSeen(state: boolean) {
             console.log('>>state', state)
             self.seen = state
+        },
+
+        addNote() {
+            const rootStore = getParentOfType(self, RootStore)
+            console.log('>>Before', rootStore.contents_notes)
+
+            rootStore.addNote(self.id)
+
+            console.log('>>After', rootStore.contents_notes)
         }
+
     }))
 
 
