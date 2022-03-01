@@ -47,16 +47,6 @@ export const ContentLayout = observer(() => {
                     })
                     }
 
-
-                    {/*<List*/ }
-                    {/*    itemLayout='horizontal'*/ }
-                    {/*    dataSource={ contents_notes }*/ }
-                    {/*    renderItem={ (content: any) => (*/ }
-                    {/*        <List.Item>*/ }
-                    {/*            <Note key={content.id} content={ content } />*/ }
-                    {/*        </List.Item>*/ }
-                    {/*    ) }*/ }
-                    {/*/>*/ }
                 </div>
             </Content>
             <Footer style={ { textAlign: 'center' } }>Ant Design ©2018 Created by Ant UED</Footer>

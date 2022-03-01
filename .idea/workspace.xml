@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc569dc-ffbc-49e0-9dec-bdb7be42fa2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Notes/Note.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mst/models/Content.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/models/Content.model.ts" afterDir="false" />
@@ -85,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645528804708</updated>
       <workItem from="1645528806079" duration="5840000" />
-      <workItem from="1646133810467" duration="5171000" />
+      <workItem from="1646133810467" duration="5697000" />
     </task>
     <servers />
   </component>

@@ -29,11 +29,12 @@ export const ContentModel = types.model('ContentModel', {
 
         addNote() {
             const rootStore = getParentOfType(self, RootStore)
-            console.log('>>Before', rootStore.contents_notes)
-
             rootStore.addNote(self.id)
+        },
 
-            console.log('>>After', rootStore.contents_notes)
+        removeNote() {
+            const rootStore = getParentOfType(self, RootStore)
+            rootStore.removeNote(self.id)
         }
 
     }))

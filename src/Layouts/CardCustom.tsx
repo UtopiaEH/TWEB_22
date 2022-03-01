@@ -7,7 +7,7 @@ import { IContentModel } from '../interfaces/interfaces'
 
 export const CardCustom = observer(({ content }: { content: IContentModel }) => {
 
-    const { title, description, notes, changeNotes, isSeen, changeSeen, seen, addNote } = content
+    const { title, description, notes, changeNotes, isSeen, changeSeen, seen, addNote, removeNote } = content
 
 
     useEffect(() => {
@@ -30,6 +30,7 @@ export const CardCustom = observer(({ content }: { content: IContentModel }) => 
             <Checkbox defaultChecked={ seen } checked={ seen } onChange={ (e) => changeSeen(e.target.checked) } />
 
             <Button onClick={ addNote }>Add Note</Button>
+            <Button type={ 'primary' } onClick={ removeNote }>Remove Note</Button>
 
         </Card>
     )
