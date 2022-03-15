@@ -22,9 +22,12 @@ const StoreProvider = ({ children }: { children: ReactElement }) => {
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+        <StoreProvider>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </StoreProvider>
+
     </React.StrictMode>
     ,
     document.getElementById('root')

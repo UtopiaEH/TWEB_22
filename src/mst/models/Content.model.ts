@@ -22,7 +22,7 @@ export const ContentModel = types.model('ContentModel', {
         },
 
         changeSeen(state: boolean) {
-            console.log('>>state', state)
+            // console.log('>>state', state)
             self.seen = state
         }
     }))

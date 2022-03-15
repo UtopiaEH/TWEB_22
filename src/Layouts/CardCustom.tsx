@@ -1,4 +1,4 @@
-import { Checkbox, Input } from 'antd'
+import { Checkbox, Input, Tooltip } from 'antd'
 import Card from 'antd/lib/card'
 import { observer } from 'mobx-react-lite'
 import { useEffect } from 'react'
@@ -12,12 +12,14 @@ export const CardCustom = observer(({ content }: { content: IContentModel }) => 
 
     useEffect(() => {
         if (isSeen) {
-            alert(`Is seen ${ title }`)
+            // alert(`Is seen ${ title }`)
+            console.log(`>>${ title }`, title)
         }
+
     }, [ isSeen ])
 
     return (
-        <Card title={ title } bordered={ false }>
+        <Card title={ <Tooltip title={ title }>{ title }</Tooltip> } bordered={ false }>
             { description }
 
             <Input

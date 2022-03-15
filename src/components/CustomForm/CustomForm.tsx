@@ -15,7 +15,7 @@ export function CustomForm() {
             intro
         }
 
-        console.log('>>res', res)
+        // console.log('>>res', res)
 
     }
 
