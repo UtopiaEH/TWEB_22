@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bc569dc-ffbc-49e0-9dec-bdb7be42fa2d" name="Changes" comment="">
+    <list default="true" id="f6b0983d-d76a-4889-ae9c-00f39dcb91ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Layouts/Articles/Articles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/HeaderLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/HeaderLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomForm/CustomForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomForm/CustomForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mst/models/Content.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/models/Content.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +92,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
