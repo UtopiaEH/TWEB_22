@@ -1,8 +1,9 @@
 import { Button, Form, Input, InputNumber } from 'antd'
+import { observer } from 'mobx-react-lite'
 import { useState } from 'react'
 import { useRootStore } from '../../index'
 
-export function CustomForm() {
+export const CustomForm = observer(() => {
 
     const { forms_custom: { name, getAge, intro, setName, setAge, setIntro, submitForm } } = useRootStore()
 
@@ -45,4 +46,4 @@ export function CustomForm() {
         </Form>
 
     )
-}
+})

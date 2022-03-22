@@ -6,7 +6,7 @@ import { ContentModel } from '../models/Content.model'
 import { v4 as uuid } from 'uuid'
 
 
-export  const FormCustom = types.model('FormCustom', {
+export const FormCustom = types.model('FormCustom', {
     name: '',
     age: 0,
     intro: ''
@@ -68,3 +68,5 @@ const RootStore = types.model('RootStore', {
 
 
 export default RootStore
+
+export const contests$ = [ { id: '' } ]
