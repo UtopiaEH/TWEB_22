@@ -1,28 +1,15 @@
 import { Button, Form, Input, InputNumber } from 'antd'
+import { observer } from 'mobx-react-lite'
 import { useState } from 'react'
+import { useRootStore } from '../../index'
 
-export function CustomForm() {
+export const CustomForm = observer(() => {
 
-    const [ name, setName ] = useState('')
-    const [ age, setAge ] = useState(0)
-    const [ intro, setIntro ] = useState('')
-
-
-    const subMit = (e: any) => {
-        const res = {
-            name,
-            age,
-            intro
-        }
-
-        // console.log('>>res', res)
-
-    }
+    const { forms_custom: { name, getAge, intro, setName, setAge, setIntro, submitForm } } = useRootStore()
 
     return (
         <Form name='nest-messages'>
             <Form.Item
-                // name={ [ 'user', 'name' ] }
                 label='Name'
                 rules={ [
                     {
@@ -34,7 +21,6 @@ export function CustomForm() {
             </Form.Item>
 
             <Form.Item
-                // name={ [ 'user', 'age' ] }
                 label='Age'
                 rules={ [
                     {
@@ -44,21 +30,20 @@ export function CustomForm() {
                     }
                 ] }
             >
-                <InputNumber value={ age } onChange={ (num) => setAge(num) } />
+                <InputNumber value={ getAge } onChange={ (num) => setAge(num) } />
             </Form.Item>
 
             <Form.Item
-                // name={ [ 'user', 'introduction' ] }
                 label='Introduction'
             >
                 <Input.TextArea value={ intro } onChange={ (e) => setIntro(e.target.value) } />
             </Form.Item>
             <Form.Item>
-                <Button type='primary' onClick={ subMit }>
+                <Button type='primary' onClick={ submitForm }>
                     Submit
                 </Button>
             </Form.Item>
         </Form>
 
     )
-}
+})
