@@ -1,7 +1,7 @@
-import RootStore, { contests$ } from './RootStore.store'
+import RootStore from './RootStore.store'
 
 const storeProvider = RootStore.create({
-    contents: contests$,
+    contents: [ { id: '' } ],
     forms_custom: {}
 
 })
