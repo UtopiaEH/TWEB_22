@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f6b0983d-d76a-4889-ae9c-00f39dcb91ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomForm/CustomForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomForm/CustomForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mst/stores/RootStore.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/stores/RootStore.store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mst/stores/StoreProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/stores/StoreProvider.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645528804708</updated>
       <workItem from="1645528806079" duration="5735000" />
-      <workItem from="1647948334101" duration="5001000" />
+      <workItem from="1647948334101" duration="5824000" />
     </task>
     <servers />
   </component>
