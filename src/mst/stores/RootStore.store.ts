@@ -37,9 +37,9 @@ const RootStore = types.model('RootStore', {
     .actions((self) => ({
         makeSnapshotContents(sn: any) {
 
-            self.contents = sn.map((item: any) => {
+            self.contents = sn.slice(0,30).map((item: any, index: number) => {
                 return {
-                    id: uuid(),
+                    id: String(index),
                     title: item.API,
                     description: item.Description,
                     link: item.Link,
@@ -55,8 +55,6 @@ const RootStore = types.model('RootStore', {
             try {
                 const res = yield axios.get('https://api.publicapis.org/entries')
                 self.makeSnapshotContents(res.data.entries)
-
-                console.log('>>contents', self.contents)
             } catch (e: any) {
                 console.log('error', e)
                 notification.error({ message: e.message })
