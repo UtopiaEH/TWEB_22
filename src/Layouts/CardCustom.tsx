@@ -4,6 +4,14 @@ import { observer } from 'mobx-react-lite'
 import { useDrag, useDrop } from 'react-dnd'
 import { IContentModel } from '../interfaces/interfaces'
 
+const style = {
+    // border: '1px dashed gray',
+    // padding: '0.5rem 1rem',
+    marginBottom: '.5rem',
+    backgroundColor: 'white',
+    cursor: 'move',
+    margin: '5px'
+}
 
 export const CardCustom = observer(({
                                         content,
@@ -16,7 +24,7 @@ export const CardCustom = observer(({
     const originalIndex = findCard(content.id)
 
     const [ { isDragging }, drag ] = useDrag(() => ({
-        type: 'article',
+        type: 'article.CONTENT',
         item: {
             id: content.id,
             originalIndex
@@ -37,12 +45,11 @@ export const CardCustom = observer(({
 
     const [ , drop ] = useDrop(
         () => ({
-            accept: 'article',
-            hover(item: any) {
-                console.log('>>item', item)
-                if (item.id !== content.id) {
-                    const { index: overIndex } = findCard(item.id)
-                    changeArticlePosition(item.id, overIndex)
+            accept: 'article.CONTENT',
+            hover({ id: draggedId }: any) {
+                if (draggedId !== content.id) {
+                    const { index: overIndex } = findCard(content.id)
+                    changeArticlePosition(draggedId, overIndex)
                 }
             }
         }),
@@ -54,10 +61,9 @@ export const CardCustom = observer(({
     return (
         <div
             ref={ (node) => drag(drop(node)) }
-            style={ {
-                opacity
-            } }>
-            <Card title={ <Tooltip title={ title }>{ title }</Tooltip> } bordered={ false }>
+            style={ { ...style, opacity } }
+        >
+            <Card title={ <Tooltip title={ title }>{ title }</Tooltip> }>
                 { description }
             </Card>
         </div>

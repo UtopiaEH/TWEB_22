@@ -17,7 +17,7 @@ export const Articles = observer(() => {
         (id: string) => {
             const content = cards.filter((c: any) => c.id === id)[0]
             return {
-                content: content,
+                content,
                 index: cards.indexOf(content)
             }
         },
@@ -43,26 +43,18 @@ export const Articles = observer(() => {
     return (
         <div
             ref={ drop }
-            style={ {
-                display: 'flex',
-                justifyContent: 'center'
-            } }>
+      >
             <Row gutter={ 16 }>
                 {
                     cards.map((content: IContentModel, index: number) => {
                         return (
-                            <div style={ {
-                                margin: 5
-                            } }
-                                 key={ index }
 
-                            >
                                 <CardCustom
+                                    key={ index }
                                     content={ content }
                                     changeArticlePosition={ changeArticlePosition }
                                     findCard={ findCard }
                                 />
-                            </div>
                         )
                     })
                 }

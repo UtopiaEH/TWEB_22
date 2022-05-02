@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f6b0983d-d76a-4889-ae9c-00f39dcb91ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layouts/Articles/Articles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/Articles/Articles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/CardCustom.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mst/stores/RootStore.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/stores/RootStore.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
