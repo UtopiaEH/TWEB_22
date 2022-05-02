@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b0983d-d76a-4889-ae9c-00f39dcb91ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Layouts/HomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mst/models/FormLists.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/Articles/Articles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/Articles/Articles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/ContentLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mst/stores/RootStore.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/stores/RootStore.store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mst/stores/StoreProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mst/stores/StoreProvider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,20 +43,24 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feature/tailwind-and-ui-ref" />
+                    <option name="lastUsedInstant" value="1650364482" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1650363678" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/about-all-and-nothing" />
+                    <option name="lastUsedInstant" value="1648547814" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="feature/requests" />
                     <option name="lastUsedInstant" value="1647948409" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1647348913" />
-                  </RecentBranch>
-                  <RecentBranch>
                     <option name="branchName" value="feature/mobx-adn-refactoring" />
                     <option name="lastUsedInstant" value="1645530191" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feature/props-hooks" />
-                    <option name="lastUsedInstant" value="1645530190" />
                   </RecentBranch>
                 </list>
               </option>
@@ -65,17 +79,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/utopiaeh/projects/tweb_22",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/home/utopiaeh/projects/tweb_22/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/Layouts" />
+      <recent name="$PROJECT_DIR$/src/mst/models" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -90,6 +110,8 @@
       <updated>1645528804708</updated>
       <workItem from="1645528806079" duration="5735000" />
       <workItem from="1647948334101" duration="5824000" />
+      <workItem from="1648547637006" duration="2960000" />
+      <workItem from="1650363569551" duration="5213000" />
     </task>
     <servers />
   </component>
@@ -112,7 +134,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

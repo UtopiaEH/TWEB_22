@@ -32,9 +32,10 @@ export const FormCustom = types.model('FormCustom', {
 
 const RootStore = types.model('RootStore', {
     contents: types.array(ContentModel),
-    forms_custom: FormCustom
+    forms_custom: FormCustom,
 })
     .actions((self) => ({
+
         makeSnapshotContents(sn: any) {
 
             self.contents = sn.map((item: any) => {

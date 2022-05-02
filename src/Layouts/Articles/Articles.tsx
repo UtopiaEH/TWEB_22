@@ -1,4 +1,4 @@
-import { Row } from 'antd'
+import { Col, Row } from 'antd'
 import { useEffect } from 'react'
 import { useRootStore } from '../../index'
 import { IContentModel } from '../../interfaces/interfaces'
@@ -20,7 +20,9 @@ export const Articles = () => {
             {
                 contents.map((content: IContentModel) => {
                     return (
-                        <CardCustom key={ content.id } content={ content } />
+                        <Col className='gutter-row' span={ 6 }>
+                            <CardCustom key={ content.id } content={ content } />
+                        </Col>
                     )
                 })
             }

@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import { CustomForm } from '../components/CustomForm/CustomForm'
 import { ROUTES } from '../Routes/Rourtes'
 import { Articles } from './Articles/Articles'
+import { HomePage } from './HomePage'
 
 const { Footer } = Layout
 
@@ -21,7 +22,7 @@ export const ContentLayout = () => {
                 <div className='site-layout-content'>
 
                     <Routes>
-                        <Route path={ ROUTES[0].path } />
+                        <Route path={ ROUTES[0].path }  element={<HomePage />}/>
                         <Route path={ ROUTES[1].path } element={ <Articles /> } />
                         <Route path={ ROUTES[3].path } element={ <CustomForm /> } />
                     </Routes>
