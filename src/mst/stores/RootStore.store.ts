@@ -1,9 +1,9 @@
 import { notification } from 'antd'
 import axios from 'axios'
+import update from 'immutability-helper'
 import { flow } from 'mobx'
 import { types } from 'mobx-state-tree'
 import { ContentModel } from '../models/Content.model'
-import { v4 as uuid } from 'uuid'
 
 
 export const FormCustom = types.model('FormCustom', {
@@ -28,16 +28,39 @@ export const FormCustom = types.model('FormCustom', {
     get getAge() {
         return String(self.age)
     }
+
 }))
 
 const RootStore = types.model('RootStore', {
     contents: types.array(ContentModel),
     forms_custom: FormCustom
 })
+    .views((self) => ({
+        findContent(id: string) {
+            const content = self.contents.filter((c: any) => c.id === id)[0]
+            return {
+                content,
+                index: self.contents.indexOf(content)
+            }
+        }
+    }))
     .actions((self) => ({
+
+        changeContentPosition(id: string, atIndex: number) {
+            const { content, index } = self.findContent(id)
+
+            self.contents = update(self.contents, {
+                $splice: [
+                    [ index, 1 ],
+                    [ atIndex, 0, content ]
+                ]
+            })
+
+        },
+
         makeSnapshotContents(sn: any) {
 
-            self.contents = sn.slice(0,30).map((item: any, index: number) => {
+            self.contents = sn.slice(0, 30).map((item: any, index: number) => {
                 return {
                     id: String(index),
                     title: item.API,
@@ -50,7 +73,6 @@ const RootStore = types.model('RootStore', {
         }
     }))
     .actions((self) => ({
-
         fetchContents: flow(function* () {
             try {
                 const res = yield axios.get('https://api.publicapis.org/entries')
